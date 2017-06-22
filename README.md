@@ -1,7 +1,7 @@
-#OkCoin 消息提醒
+# OkCoin 消息提醒
 
 
-###安装
+### 安装
 ```bash
     git clone https://github.com/zhuzhenyu/okcoin-notice
     cd okcoin-notice
