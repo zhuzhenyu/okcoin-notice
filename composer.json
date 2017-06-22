@@ -1,0 +1,9 @@
+{
+    "name": "okcoin-monitor",
+     "autoload": {
+        "psr-4": {"OkCoinMonitor\\": "app"}
+    },
+    "require": {
+        "workerman/phpsocket.io" : ">1.0.0"
+    }
+}
