@@ -123,6 +123,10 @@ $worker->onWorkerStart = function ($worker) {
     // 当连接远程websocket服务器的连接断开时
     $conn->onClose = function ($conn) {
         echo "connection closed\n";
+        //断线重连
+        $conn->reConnect(1);
+        echo "reconnec...\n";
+        
     };
 
     $conn->connect();
