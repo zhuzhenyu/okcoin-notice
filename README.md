@@ -10,7 +10,9 @@
 
 ### 使用
 
+需要填写 config.ini 配置项 
+
 ```bash
-    php start.php start
+    php app.php start -d
 ```
 
