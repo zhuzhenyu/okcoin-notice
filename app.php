@@ -18,7 +18,6 @@ $config['pushBear_send_count'] = 0;
 //上次发送时间
 $config['pushBear_pre_send_time'] = 0;
 
-
 $worker->onWorkerStart = function ($_worker) {
     $interval = 0.5;
     Timer::add($interval, function () {
@@ -92,6 +91,7 @@ EOL;
                 echo "error: $msg\n";
                 global $reConnect;
                 $reConnect = 0;
+                $_conn->close("close connection\n");
             };
             //连接断开
             $conn->onClose = function ($_conn) use ($conn) {
