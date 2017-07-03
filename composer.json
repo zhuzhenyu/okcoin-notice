@@ -4,6 +4,7 @@
         "psr-4": {"OkCoinMonitor\\": "app"}
     },
     "require": {
-        "workerman/phpsocket.io" : ">1.0.0"
+        "workerman/phpsocket.io" : ">1.0.0",
+        "phplucidframe/console-table": "^1.1"
     }
 }
