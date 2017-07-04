@@ -1,10 +1,12 @@
 {
-    "name": "okcoin-monitor",
-     "autoload": {
-        "psr-4": {"OkCoinMonitor\\": "app"}
-    },
-    "require": {
-        "workerman/phpsocket.io" : ">1.0.0",
-        "phplucidframe/console-table": "^1.1"
-    }
+  "name": "okcoin-monitor",
+  "autoload": {
+    "files": [
+      "utils/functions.php"
+    ]
+  },
+  "require": {
+    "workerman/phpsocket.io": ">1.0.0",
+    "phplucidframe/console-table": "^1.1"
+  }
 }
