@@ -56,10 +56,11 @@ $worker->onWorkerStart = function ($_worker) {
 | 参考数据 | 参考值 | 
 | --- | --- |
 | 最新成交价格 | {$content["last"]} |
-| 买一价 | {$content["high"]} |
-| 最高价 | {$content["low"]} |
-| 最低价 | {$content["sell"]} |
-| 卖一价 | {$content["vol"]} |
+| 买一价 | {$content["buy"]} |
+| 最高价 | {$content["high"]} |
+| 最低价 | {$content["low"]} |
+| 卖一价 | {$content["sell"]} |
+| 成交量 | {$content["vol"]} |
 | 服务器时间 | {$datetime} |
 EOL;
                     $cur = time();
